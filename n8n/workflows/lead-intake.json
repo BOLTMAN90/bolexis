@@ -1,0 +1,22 @@
+{
+  "name": "New lead intake",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bolexis-lead-intake",
+        "options": {}
+      },
+      "name": "Lead intake webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0]
+    }
+  ],
+  "connections": {},
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "notes": "Verify x-bolexis-timestamp and x-bolexis-signature with N8N_WEBHOOK_SECRET before using the payload. Do not mark the BOLEXIS run successful inside n8n until this workflow returns HTTP 200."
+  }
+}

@@ -1,9 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Workspace pages depend on the signed-in user. Leave component caching off
+  // so one user's CRM data cannot be reused for another request.
   turbopack: {
     rules: {
       "*.css": {

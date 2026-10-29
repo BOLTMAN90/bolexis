@@ -30,8 +30,15 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files
 .env*
+!.env.example
+
+# demo database and local uploads
+.data/
+
+# local Cursor project files, including credentials
+.cursor/
 
 # vercel
 .vercel
